@@ -13,13 +13,13 @@ This project automates the process of:
 
 ## 🔹 Key Features
 
-✅ Automated Instagram post retrieval  
-✅ AI-powered caption summarization  
-✅ Seamless Twitter posting (text & image)  
-✅ Fully configurable & scheduled automation  
-✅ FastAPI-based API endpoints  
-✅ Logging and error handling  
-✅ Unit and integration tests  
+✅ Automated Instagram post retrieval
+✅ AI-powered caption summarization
+✅ Seamless Twitter posting (text & image)
+✅ Fully configurable & scheduled automation
+✅ FastAPI-based API endpoints
+✅ Logging and error handling
+✅ Unit and integration tests
 
 ## 📌 System Architecture
 
@@ -45,11 +45,11 @@ graph TD;
 
 ### 🔹 Prerequisites
 
-✅ Python 3.10+  
-✅ Virtual Environment (venv)  
-✅ pip for package management  
-✅ Twitter & Instagram API credentials  
-✅ FastAPI & Uvicorn for the backend  
+✅ Python 3.10+
+✅ Virtual Environment (venv)
+✅ pip for package management
+✅ Twitter & Instagram API credentials
+✅ FastAPI & Uvicorn for the backend
 
 ### 🔹 Installation
 
@@ -85,7 +85,7 @@ TWITTER_ACCESS_SECRET="your_access_secret"
 INSTAGRAM_USERNAME="your_instagram_username"
 INSTAGRAM_PASSWORD="your_instagram_password"
 
-TARGET_USERNAME="target_instagram_username (optional, default="bbcnews")"
+TARGET_USERNAME="target_instagram_username" (optional, default="bbcnews")
 ```
 
 ## 📌 Running the Application
@@ -191,4 +191,3 @@ MIT License. See `LICENSE` for details.
 💬 Have questions? Open an issue or contact me at `shivampatel887@gmail.com`
 
 🚀 Enjoy Automating! 🎉
-
