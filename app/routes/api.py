@@ -7,10 +7,9 @@ router = APIRouter()
 
 @router.get("/instagram/latest-post")
 def get_latest_instagram_post():
-
     return fetch_latest_instagram_post()
-@router.post("/post-tweet/")
 
+@router.post("/post-tweet/")
 def post_summarized_tweet():
 
     data = fetch_latest_instagram_post()

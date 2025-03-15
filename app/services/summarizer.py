@@ -1,11 +1,9 @@
-import openai
 import os
 from dotenv import load_dotenv
 import google.generativeai as genai
 
 load_dotenv()
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def summarize_caption(caption: str) -> str:
 
