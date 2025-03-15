@@ -16,7 +16,7 @@ CLIENT_SECRET = os.getenv("TWITTER_CLIENT_SECRET")
 def post_tweet(tweet: str):
 
     try:
-        auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
+        auth = tweepy.OAuth1UserHandler(API_KEY, API_SECRET)
         auth.set_access_token(
             ACCESS_TOKEN,
             ACCESS_SECRET,
