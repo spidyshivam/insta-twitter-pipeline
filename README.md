@@ -55,7 +55,7 @@ graph TD;
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/yourusername/instagram-twitter-pipeline.git
+git clone https://github.com/spidyshivam/insta-twitter-pipeline.git
 cd instagram-twitter-pipeline
 
 # 2️⃣ Create a virtual environment
