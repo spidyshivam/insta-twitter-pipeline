@@ -84,6 +84,8 @@ TWITTER_ACCESS_SECRET="your_access_secret"
 
 INSTAGRAM_USERNAME="your_instagram_username"
 INSTAGRAM_PASSWORD="your_instagram_password"
+
+TARGET_USERNAME="target_instagram_username (optional, default="bbcnews")"
 ```
 
 ## 📌 Running the Application

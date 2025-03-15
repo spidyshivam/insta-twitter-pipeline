@@ -3,6 +3,7 @@ import os
 import requests
 from instagrapi import Client
 from app.config import Config
+from dotenv import load_dotenv
 
 logging.basicConfig(
     filename="app.log",
@@ -14,15 +15,16 @@ def fetch_latest_instagram_post():
     cl = Client()
 
     try:
+        load_dotenv()
         logging.info("Attempting to log in to Instagram...")
         cl.login(Config.INSTAGRAM_USERNAME, Config.INSTAGRAM_PASSWORD)
         logging.info("Instagram login successful.")
+        username = os.getenv("TARGET_USERNAME", "bbcnews")
+        user = cl.user_info_by_username(username)
+        logging.info(f"Fetched user info for {user.username} (ID: {user.pk})")
 
-        bbc_user = cl.user_info_by_username("bbcnews")
-        logging.info(f"Fetched user info for {bbc_user.username} (ID: {bbc_user.pk})")
-
-        posts = cl.user_medias(bbc_user.pk, amount=10)
-        logging.info(f"Retrieved {len(posts)} posts from {bbc_user.username}")
+        posts = cl.user_medias(user.pk, amount=10)
+        logging.info(f"Retrieved {len(posts)} posts from {user.username}")
 
         for post in posts:
             if post.media_type in [1, 8]:  # 1=photo, 8=carousel
